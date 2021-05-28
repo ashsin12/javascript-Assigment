@@ -1,0 +1,36 @@
+<html>
+<body>
+<script>
+
+function countVowel(str) { 
+var count_a = count_e = count_i = count_o = count_u = 0;
+   for (var c = 0; c < str.length; c++)
+	{
+	if (str[c] == 'a')
+			{count_a = count_a + 1;}
+	else if (str[c] == 'e')
+			{count_e = count_e + 1;}
+		else if (str[c] == 'i')
+			{count_i = count_i + 1;}
+		else if (str[c]  ==  'o')
+			{count_o = count_o + 1;}
+		else (str[c] == 'u')
+			{count_u = count_u + 1;}
+	}
+    document.write("count of a:",count_a);
+	document.write("<br>");
+	document.write("count of e:",count_e);
+	document.write("<br>");
+	document.write("count of i:",count_i);
+	document.write("<br>");
+	document.write("count of o:",count_o);
+	document.write("<br>");
+	document.write("count of u:",count_u);
+	}
+var name = window.prompt("Enter string: ");
+countVowel(name);
+
+
+</script>
+</body>
+</html>
